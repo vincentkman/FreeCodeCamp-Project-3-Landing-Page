@@ -1,0 +1,8 @@
+.pricing {
+  @include e(card) {
+    margin-top: em(15px);
+    @include e(header) {
+      font-weight: $font-weight--bold;
+    }
+  }
+}

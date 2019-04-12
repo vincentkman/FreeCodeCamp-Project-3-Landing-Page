@@ -1,0 +1,18 @@
+.contact  {
+  background-color: palette(grey, x-light);
+  margin: 0 auto;
+  text-align: right;
+  @include mq("medium") {
+    width: em(850px);
+  }
+  @include e(nav) {
+    @include e(item) {
+      @include e(link) {
+        color: $black;
+      }
+    }
+  }
+  p {
+    color: $dark-grey;
+  }
+}

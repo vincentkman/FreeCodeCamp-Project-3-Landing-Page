@@ -1,0 +1,5 @@
+.how-it-works {
+  @include e(video) {
+    @include flexbox($just: center, $align: center);
+  }
+}

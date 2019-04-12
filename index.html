@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" name="viewport">
+  <title>Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+  <div class="home">
+
+ <!-- Navigation -->
+
+ <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+   <div class="container-fluid">
+     <a class= "navbar__brand navbar-brand" href="#"><img src="images/original_trombones.png" width="300" height="50"></a>
+     <button class="navbar__toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+        <span class="navbar__toggler__toggler-icon navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar__collapse navbar-collapse collapse" id="nav">
+          <ul class="navbar__navbar-nav navbar-nav ml-auto">
+            <li class="navbar__navbar-nav__nav-item nav-item active">
+              <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#features">Features</a>
+            </li>
+            <li class="navbar__navbar-nav__nav-item nav-item">
+              <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#how-it-works">How It Works</a>
+            </li>
+            <li class="navbar__navbar-nav__nav-item nav-item">
+              <a class="navbar__navbar-nav__nav-item__nav-link nav-link" href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+     </div>
+   </nav>
+
+    <div id="features" class="features container-fluid padding">
+        <div>
+          <div><h2 class="features__title display-8 text-center">Handcrafted, home-made masterpieces</h2></div>
+
+          <form class="index.html" method="post">
+            <input class="textbox" type="text" id="email" name="email" placeholder="Enter your email address" required>
+            <button id="btn" class="btn-warning btn-lg">get started</button>
+          </form>
+
+          <div class="margin">
+            <h2 class="features__subtitle features__subtitle__1 display-8"><i class="features__icon far fa-lightbulb"></i>Premium Materials</h2>
+            <p class="lead">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+          <div class="margin">
+            <h2 class="features__subtitle features__subtitle__2 display-8"><i class="features__icon fas fa-truck"></i>Fast Shipping</h2>
+            <p class="lead">We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </div>
+          <div class="margin">
+            <h2 class="features__subtitle features__subtitle__3 display-8"><i class="features__icon fas fa-battery-full"></i>Quality Assurance</h2>
+            <p class="lead">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="how-it-works" class="how-it-works container-fluid padding">
+        <div class="embed-responsive-16by9 how-it-works__video">
+        <iframe width="600" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div id="pricing" class="pricing container-fluid padding">
+        <div class="row">
+          <div class="col">
+            <div class="pricing__card card mx-auto text-center" style="width: 18rem;">
+              <div class="pricing__card__header card-header">
+                TENOR TROMBONE
+              </div>
+              <div class="pricing__card__card-body card-body">
+                <h4>$600</h4>
+                <p class="pricing__card__card-body__text card-text">Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.</p>
+                <a href="#" class="pricing__card__card-body-btn btn btn-warning">SELECT</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="pricing__card card mx-auto text-center" style="width: 18rem;">
+              <div class="pricing__card__header card-header">
+                BASS TROMBONE
+              </div>
+              <div class="pricing__card__card-body card-body">
+                <h4>$900</h4>
+                <p class="pricing__card__card-body__text card-text">Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.</p>
+                <a href="#" class="pricing__card__card-body__btn btn btn-warning">SELECT</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="pricing__card card mx-auto text-center" style="width: 18rem;">
+              <div class="pricing__card__header card-header">
+                VALVE TROMBONE
+              </div>
+              <div class="pricing__card__card-body card-body">
+                <h4>$1200</h4>
+                <p class="pricing__card__card-body__text card-text">Plays similiar to a Trumpet.<br>Gret for Jazz Bands.<br>Lorem ipsum dolor.<br>Lorem ipsum.</p>
+                <a href="#" class="pricing__card__card-body__btn btn btn-warning">SELECT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<footer>
+  <div class="contact">
+    <ul class="contact__nav nav justify-content-end">
+    <li class="contact__nav__item nav-item">
+      <a class="contact__nav__item__link nav-link" href="#">Privacy</a>
+    </li>
+    <li class="contact__nav__item nav-item">
+      <a class="contact__nav__item__link nav-link" href="#">Terms</a>
+    </li>
+    <li class="contact__nav__item nav-item">
+      <a class="contact__nav__item__link nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+  <div class="contact__copyright">
+    <p class="">Copyright 2019, Original Trombones</p>
+  </div>
+</div>
+
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </body>
+</html>

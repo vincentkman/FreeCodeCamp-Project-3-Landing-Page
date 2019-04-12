@@ -1,0 +1,39 @@
+// ======================================
+//  Base Styles
+// ======================================
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: ($base__line/$base__font-size);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: #222;
+}
+
+body {
+  overflow-x: hidden;
+  color: #505962;
+}
+
+
+.padding {
+  padding-bottom: em(50px);
+}
+
+.margin {
+  margin-top: em(50px);
+}

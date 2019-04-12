@@ -1,0 +1,58 @@
+.features {
+  margin-top: em(90px);
+  @include e(icon) {
+    visibility: hidden;
+    @include mq("medium") {
+      margin-right: em(40px);
+      visibility: visible;
+      font-size: em(30px);
+      color: $orange;
+      vertical-align: top;
+    }
+  }
+  @include e(subtitle) {
+    text-align: center;
+    @include mq("medium") {
+      width: em(300px);
+      text-align: left;
+      @include e(1) {
+        @include mq("medium") {
+          margin-left: em(90px);
+        }
+      }
+      @include e(2) {
+        @include mq("medium") {
+          margin-left: em(75px);
+        }
+      }
+      @include e(3) {
+        @include mq("medium") {
+          margin-left: em(75px);
+        }
+      }
+    }
+  }
+  p {
+    text-align: center;
+    @include mq("medium") {
+      margin: em(-20px) 0 0 em(300px);
+      text-align: left;
+    }
+  }
+}
+
+input[type="text"] {
+  @extend %form-input;
+  &:hover {
+    outline: none;
+  }
+  &:focus {
+    @extend %input-box-style;
+  }
+}
+
+::placeholder {
+  font-weight: $font-weight--light;
+  font-style: italic;
+  padding-right: em(15px);
+}

@@ -1,0 +1,92 @@
+// No underline
+
+%no-txt-undln {
+  text-decoration: none;
+}
+
+// Screen reader text
+
+%srt {
+  text-indent: -9999px;
+}
+
+//Headlines
+
+%hdln-prim {
+  font-size: em(30px);
+  font-weight: $font-weight--ultra-bold;
+  color: $dark-grey;
+  letter-spacing: $letter-space;
+}
+
+%hdln-sec {
+  font-size: em(20px);
+  font-weight: $font-weight--ultra-bold;
+  letter-spacing: $letter-space;
+}
+
+// Border
+
+%border-style {
+  border: 2px solid $light-grey;
+  border-radius: $br--default;
+}
+
+
+// Button
+
+%btn {
+  // color: $white;
+  text-transform: uppercase;
+  font-size: em(13px);
+  font-weight: $font-weight--medium;
+  cursor: pointer;
+  &:hover {
+    @extend %trn;
+  }
+  &:active {
+    opacity: .8;
+  }
+}
+
+
+// Transition
+
+%trn {
+  opacity: .8;
+  transition: $trns-duration;
+}
+
+// Mouseover
+
+%mouseover {
+  cursor: pointer;
+  &:hover {
+    opacity: .5;
+    @extend %trn;
+  }
+  &:focus {
+    opacity: 1;
+  }
+  &:active {
+    opacity: .8;
+  }
+}
+
+// Form Input Box
+
+%form-input {
+  height: em(56px);
+  width: em(350px);
+  border-radius: 8px 8px;
+  font-size: 16px;
+  padding: 15px;
+  margin: em(30px) auto;
+  @include flexbox($just: center);
+}
+
+%input-box-style {
+  outline: none;
+  background-color: $light-yellow;
+  transition: all $trns-duration;
+}
